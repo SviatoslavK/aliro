@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/vue@2.4.2/dist/vue.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <nav class="header__nav">
+                <div class="header__logo">Aliro</div>
+                <ul class="header__navbar">
+                    <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">How it works</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Insights</a></li>
+                </ul>
+                <div class="header__lang">
+                    <div class="header__lang--text">ENG</div>
+                    <div class="header__lang--arrow"></div>
+                </div>
+                <div class="header__sign">sign in</div>
+                <div class="header__btn">create a listing</div>
+            </nav>
+        
+            <div class="header__title">Qualified access to commodities database</div>
+            <div class="header__subtitle">The term commodity is specifically used for an economic good or service when the demand for it has no qualitative differentiation across a <span class="underline">market</span>.</div>
+        
+            <div class="header__search">
+                <input type="text" name="" id="" class="header__search--input" placeholder="What you are looking for?">
+                <div class="header__search--btn">search</div>
+            </div>
+        </div>
+
+        <div class="images">
+            <div class="images__block1">
+                <div class="images__title images__block1--title">Access the global market
+                    <span class="images__title--free">for free</span></div>
+                <div class="images__subtitle images__block1--subtitle">Join us and get free access for 6 months to sell and buy commodities all over the world.</div>
+                <div class="images__btn images__block1--btn">join aliro</div>
+            </div>
+            <div class="images__block2">
+                <div class="images__title images__block2--title">Buy and sell commodities globally</div>
+                <div class="images__btn images__block2--btn">check how it works</div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="cards__title">My recently viewed</div>
+            <div class="cards__slider">
+        
+                <div class="slider__card" v-for="card in cards">
+                    <img class="card__img" :src="card.src">
+                    <div class="card__title">{{ card.title }}</div>
+                    <div class="card__date">
+                        <div class="card__date--icon"></div>
+                        <div class="card__date--text"><span class="date--from">from</span>{{ card.date }}</div>
+                    </div>
+                    <div class="card__location">
+                        <div class="card__location--icon"></div>
+                        <div class="card__location--text">{{ card.location }}</div>
+                    </div>
+                    <div class="card__price">
+                        <div class="card__price--price">{{ card.price }}</div>
+                        <div class="card__price--weight">/ Metric Ton</div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+
+        <div class="forms">
+            <div class="forms__title">One request, multiple quotes</div>
+            <div class="forms__form">
+                <input type="text" name="" id="" class="forms__input--text" placeholder="What you are looking for?">
+                <input type="text" name="" id="" class="forms__input--quanity" placeholder="in tons">
+                <div class="forms__btn">get quote</div>
+            </div>
+        </div>
+
+        <div class="news">
+            <div class="news__block--top">
+                <div class="news__block1">
+                    <div class="news__title">Latest news <span class="news__title--and">&</span>reports</div>
+                    <a href="#" class="news__title--link">see all 24 insights</a>
+                    <div class="news__first">
+                        <div class="first__img"></div>
+                        <div class="first__textblock">
+                            <div class="first__title">Hong Kong Program Seeks to Unearth Next Fintech Blockbuster
+                            </div>
+                            <div class="first__date">25 Jan 2017</div>
+                            <div class="first__textbody">Ten technology start-ups, including companies from Hong Kong, South Korea, Singapore and the United States,
+                                aim to introduce innovation that could help financial institutions in the Asia-Pacific improve their
+                                efficiency, bolster cybersecurity and offer more customer-friendly services.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__block2">
+                    <div class="news__stay--title">Stay tuned</div>
+                    <div class="news__stay--subtitle">with us in socials</div>
+                    <div class="footer__socials">
+                        <div class="footer__socials--social footer__socials--fb"><a href="#" class="footer__social--link"></a></div>
+                        <div class="footer__socials--social footer__socials--tw"><a href="#" class="footer__social--link"></a></div>
+                        <div class="footer__socials--social footer__socials--lk"><a href="#" class="footer__social--link"></a></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="news__block3" >
+                <div class="news__singlenews" v-for="news in allnews">
+                    <img class="singlenews__img" :src="news.src">
+                    <div class="singlenews__title">{{ news.title }}</div>
+                    <div class="singlenews__date">{{ news.date }}</div>
+                    <div class="singlenews__textbody">{{ news.body }}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer__block footer__block--bl1">
+                <div class="footer__bl1--top">
+                    <div class="footer__navbar">
+                        <div class="item__block--footer item__block1">
+                            <div class="footer__navbar--item"><a href="#" class="footer__navbar--link">Home</a></div>
+                            <div class="footer__navbar--item"><a href="#" class="footer__navbar--link">Services</a></div>
+                        </div>
+                        <div class="item__block--footer item__block2">
+                            <div class="footer__navbar--item"><a href="#" class="footer__navbar--link">How it works</a></div>
+                            <div class="footer__navbar--item"><a href="#" class="footer__navbar--link">About</a></div>
+                        </div>
+                        <div class="item__block--footer item__block3">
+                            <div class="footer__navbar--item"><a href="#" class="footer__navbar--link">Pricing</a></div>
+                            <div class="footer__navbar--item"><a href="#" class="footer__navbar--link">Blog</a></div>
+                        </div>
+                    </div>
+                    <div class="footer__socials">
+                        <div class="footer__socials--social footer__socials--fb"><a href="#" class="footer__social--link"></a></div>
+                        <div class="footer__socials--social footer__socials--tw"><a href="#" class="footer__social--link"></a></div>
+                        <div class="footer__socials--social footer__socials--lk"><a href="#" class="footer__social--link"></a></div>
+                    </div>
+                </div>
+                <div class="footer__form">
+                    <input type="text" name="" id="" class="footer__form--input" placeholder="Email for newsletters">
+                    <div class="footer__form--btn">subscribe</div>
+                </div>
+            </div>
+        
+            <div class="footer__block footer__block--bl2">
+                <ul class="footer__servicenav">
+                    <li class="servicenav__item"><a href="#" class="servicenav__link">Terms of service</a></li>
+                    <li class="servicenav__item"><a href="#" class="servicenav__link">The policy of confidentiality</a></li>
+                    <li class="servicenav__item"><a href="#" class="servicenav__link">Support</a></li>
+                    <li class="servicenav__item"><a href="#" class="servicenav__link">FAQ</a></li>
+                </ul>
+                <div class="footer__copyright">© 2017 «Aliro»</div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        var news = new Vue({
+            el: '.container',
+            data() {
+                return {
+                    allnews: [
+                        {
+                            title: "Trump's Priorities: Tax Cuts, Trade Deals and the Next Fed Chair",
+                            date: "Jul 25, 2017",
+                            src: "img/news__1.png",
+                            body: "In a wide-ranging interview with The Wall Street Journal, Trump said he wants to bring the corporate tax rate down to 15%."
+                        },
+                        {
+                            title: "AMD's Strong Guidance Points to Share Gains and More Could Be On the Way",
+                            date: "Jul 25, 2017",
+                            src: "img/news__2.png",
+                            body: "As the chipmaker takes aim at markets that Intel and Nvidia have long dominated, its aggressively-priced products simply need to be 'good enough' to find buyers."
+                        },
+                        {
+                            title: "Trump Says Apple CEO Tim Cook Has 'Promised' to Build Three U.S. Factor…",
+                            date: "Jul 25, 2017",
+                            src: "img/news__3.png",
+                            body: "In a surprising claim, U.S. President Donald Trump told the Wall Street Journal that Apple is building three new factories in the U.S."
+                        },
+                        {
+                            title: "Traders Shift Attention to Chinese Brokerages as Crackdown Continues…",
+                            date: "Jul 25, 2017",
+                            src: "img/news__4.png",
+                            body: "Gauge of the 33 brokerages trading on the Shanghai and Shenzhen stock exchanges rises to four-month high."
+                        }
+                    ],
+                    cards: [
+                        {
+                            src: "img/img__field.png",
+                            title: "100% clean yellow corn (maize)",
+                            date: "25 Jan 2017",
+                            location: "ARGENTINA",
+                            price: "$245–256"
+                        },
+                        {
+                            src: "img/img__field.png",
+                            title: "100% clean yellow corn (maize)",
+                            date: "25 Jan 2017",
+                            location: "UKRAINE",
+                            price: "$245–256"
+                        },
+                        {
+                            src: "img/img__field.png",
+                            title: "100% clean yellow corn (maize)",
+                            date: "25 Jan 2017",
+                            location: "UKRAINE",
+                            price: "$245–256"
+                        },
+                        {
+                            src: "img/img__field.png",
+                            title: "100% clean yellow corn (maize)",
+                            date: "25 Jan 2017",
+                            location: "UKRAINE",
+                            price: "$245–256"
+                        },
+                        {
+                            src: "img/img__field.png",
+                            title: "100% clean yellow corn (maize)",
+                            date: "25 Jan 2017",
+                            location: "UKRAINE",
+                            price: "$245–256"
+                        }
+                    ]
+                }
+            }
+        })
+    </script>
+</body>
+</html>

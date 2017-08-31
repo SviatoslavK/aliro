@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/vue@2.4.2/dist/vue.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        //= template/header.html
+
+        //= template/images.html
+
+        //= template/cards.html
+
+        //= template/forms.html
+
+        //= template/news.html
+
+        //= template/footer.html
+
+
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        var news = new Vue({
+            el: '.container',
+            data() {
+                return {
+                    allnews: [
+                        {
+                            title: "Trump's Priorities: Tax Cuts, Trade Deals and the Next Fed Chair",
+                            date: "Jul 25, 2017",
+                            src: "img/news__1.png",
+                            body: "In a wide-ranging interview with The Wall Street Journal, Trump said he wants to bring the corporate tax rate down to 15%."
+                        },
+                        {
+                            title: "AMD's Strong Guidance Points to Share Gains and More Could Be On the Way",
+                            date: "Jul 25, 2017",
+                            src: "img/news__2.png",
+                            body: "As the chipmaker takes aim at markets that Intel and Nvidia have long dominated, its aggressively-priced products simply need to be 'good enough' to find buyers."
+                        },
+                        {
+                            title: "Trump Says Apple CEO Tim Cook Has 'Promised' to Build Three U.S. Factor…",
+                            date: "Jul 25, 2017",
+                            src: "img/news__3.png",
+                            body: "In a surprising claim, U.S. President Donald Trump told the Wall Street Journal that Apple is building three new factories in the U.S."
+                        },
+                        {
+                            title: "Traders Shift Attention to Chinese Brokerages as Crackdown Continues…",
+                            date: "Jul 25, 2017",
+                            src: "img/news__4.png",
+                            body: "Gauge of the 33 brokerages trading on the Shanghai and Shenzhen stock exchanges rises to four-month high."
+                        }
+                    ],
+                    cards: [
+                        {
+                            src: "img/img__field.png",
+                            title: "100% clean yellow corn (maize)",
+                            date: "25 Jan 2017",
+                            location: "ARGENTINA",
+                            price: "$245–256"
+                        },
+                        {
+                            src: "img/img__field.png",
+                            title: "100% clean yellow corn (maize)",
+                            date: "25 Jan 2017",
+                            location: "UKRAINE",
+                            price: "$245–256"
+                        },
+                        {
+                            src: "img/img__field.png",
+                            title: "100% clean yellow corn (maize)",
+                            date: "25 Jan 2017",
+                            location: "UKRAINE",
+                            price: "$245–256"
+                        },
+                        {
+                            src: "img/img__field.png",
+                            title: "100% clean yellow corn (maize)",
+                            date: "25 Jan 2017",
+                            location: "UKRAINE",
+                            price: "$245–256"
+                        },
+                        {
+                            src: "img/img__field.png",
+                            title: "100% clean yellow corn (maize)",
+                            date: "25 Jan 2017",
+                            location: "UKRAINE",
+                            price: "$245–256"
+                        }
+                    ]
+                }
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+.news {
+    width: 100%;
+    height: 820px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 112px;
+    box-sizing: border-box;
+}
+.news__title {
+    font-size: 30px;
+    font-weight: 300;
+    display: inline-block;
+}
+.news__title--and {
+    color: #5B86E5;
+    margin-left: 3px;
+    margin-right: 7px;
+}
+.news__title--link {
+    font-size: 16px;
+    color: #4A90E2;
+    line-height: 19px;
+    margin-left: 30px;
+}
+
+.news__block--top {
+    display: flex;
+    height: 240px;
+    margin-bottom: 60px;
+}
+.news__block1 {
+    width: 880px;
+    border-right: 1px solid #E5ECFA;
+     padding-right: 60px;
+    box-sizing: border-box;
+}
+.news__first {
+    display: flex;
+    margin-top: 53px;
+}
+.first__img {
+    min-width: 220px;
+    width: 220px;
+    height: 120px;
+    margin-right: 79px;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../img/news__first.png');
+}
+.first__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    width: 415px;
+    margin-bottom: 7px;
+}
+.first__date {
+    color: #D8D8D8;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 10px;
+    margin-bottom: 24px;
+}
+.first__textbody {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+}
+.news__block2 {
+    padding-top: 60px;
+    padding-left: 59px;
+}
+.news__stay--title {
+    font-size: 30px;
+    font-weight: 300;
+}
+.news__stay--subtitle {
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.news .footer__socials--social {
+    margin-right: 10px;
+}
+.news__singlenews {
+    width: 220px;
+    height: 316px;
+    overflow: hidden;
+}
+.singlenews__img {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 24px;
+    background-size: cover;
+    background-position: center center;
+}
+.singlenews__img--1 {
+    background-image: url('../img/news__1.png');
+}
+.singlenews__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 7px;
+}
+.singlenews__date {
+    text-transform: uppercase;
+    color: #D8D8D8;
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+.singlenews__textbody {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+}
+.news__block3 {
+    display: flex;
+    justify-content: space-between;
+}

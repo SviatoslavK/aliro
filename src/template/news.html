@@ -1,0 +1,37 @@
+<div class="news">
+    <div class="news__block--top">
+        <div class="news__block1">
+            <div class="news__title">Latest news <span class="news__title--and">&</span>reports</div>
+            <a href="#" class="news__title--link">see all 24 insights</a>
+            <div class="news__first">
+                <div class="first__img"></div>
+                <div class="first__textblock">
+                    <div class="first__title">Hong Kong Program Seeks to Unearth Next Fintech Blockbuster
+                    </div>
+                    <div class="first__date">25 Jan 2017</div>
+                    <div class="first__textbody">Ten technology start-ups, including companies from Hong Kong, South Korea, Singapore and the United States,
+                        aim to introduce innovation that could help financial institutions in the Asia-Pacific improve their
+                        efficiency, bolster cybersecurity and offer more customer-friendly services.</div>
+                </div>
+            </div>
+        </div>
+        <div class="news__block2">
+            <div class="news__stay--title">Stay tuned</div>
+            <div class="news__stay--subtitle">with us in socials</div>
+            <div class="footer__socials">
+                <div class="footer__socials--social footer__socials--fb"><a href="#" class="footer__social--link"></a></div>
+                <div class="footer__socials--social footer__socials--tw"><a href="#" class="footer__social--link"></a></div>
+                <div class="footer__socials--social footer__socials--lk"><a href="#" class="footer__social--link"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="news__block3" >
+        <div class="news__singlenews" v-for="news in allnews">
+            <img class="singlenews__img" :src="news.src">
+            <div class="singlenews__title">{{ news.title }}</div>
+            <div class="singlenews__date">{{ news.date }}</div>
+            <div class="singlenews__textbody">{{ news.body }}</div>
+        </div>
+    </div>
+</div>

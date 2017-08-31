@@ -1,0 +1,130 @@
+.header {
+    width: 100%;
+    height: 480px;
+    background: linear-gradient(45deg, #5B86E5, #36D1DC);
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+.header__nav {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 7.5px;
+    margin-right: 260px;
+}
+.header__navbar {
+    display: flex;
+    list-style: none;
+    width: 400px;
+    justify-content: space-between;
+    margin-right: 115px;
+}
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+}
+.header__lang {
+    display: flex;
+    margin-right: 34px;
+}
+.header__lang--arrow {
+    width: 0;
+height: 0;
+border: 0 solid transparent;
+border-left-width: 4px;
+border-right-width: 4px;
+border-top: 4px solid #fff;
+margin-left: 5px;
+margin-top: 3px;
+&:hover {
+    cursor: pointer;
+}
+}
+.header__lang--text,
+.header__sign,
+.header__btn {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.header__btn {
+    width: 160px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-transform: uppercase;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.header__title {
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 97px;
+}
+.header__subtitle {
+    font-size: 15px;
+    line-height: 20px;
+    width: 560px;
+    margin: 35px auto;
+    text-align: center;
+    color: #fff;
+}
+.underline {
+    text-decoration: underline;
+}
+.header__search {
+    display: flex;
+    width: 640px;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 60px;
+}
+.header__search--input {
+    height: 100%;
+    width: 480px;
+    border-radius: 5px;
+    border: 0;
+    padding-left: 60px;
+    color: #4A90E2;
+    font-size: 15px;
+    font-weight: 400;
+    box-sizing: border-box;
+    background-position: 20px 50%;
+    background-image: url('../img/icon__search.png');
+    background-repeat: no-repeat;
+}
+.header__search--btn {
+    width: 140px;
+    height: 100%;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #fff;
+}

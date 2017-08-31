@@ -1,0 +1,23 @@
+<div class="cards">
+    <div class="cards__title">My recently viewed</div>
+    <div class="cards__slider">
+
+        <div class="slider__card" v-for="card in cards">
+            <img class="card__img" :src="card.src">
+            <div class="card__title">{{ card.title }}</div>
+            <div class="card__date">
+                <div class="card__date--icon"></div>
+                <div class="card__date--text"><span class="date--from">from</span>{{ card.date }}</div>
+            </div>
+            <div class="card__location">
+                <div class="card__location--icon"></div>
+                <div class="card__location--text">{{ card.location }}</div>
+            </div>
+            <div class="card__price">
+                <div class="card__price--price">{{ card.price }}</div>
+                <div class="card__price--weight">/ Metric Ton</div>
+            </div>
+        </div>
+
+    </div>
+</div>
